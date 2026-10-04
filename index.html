@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NovaCart is an e-commerce website with customer support and contact information."
+    />
+    <title>NovaCart | E-commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">NovaCart</div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#features">Why Us</a>
+          <a href="#support">Support</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="cart-btn" type="button" aria-label="Shopping cart">
+          Cart <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Fresh deals every day</p>
+            <h1>Shop smarter for the things you love.</h1>
+            <p class="subtitle">
+              Discover premium tech, home essentials, and everyday favorites with
+              fast delivery and friendly support.
+            </p>
+            <div class="cta-row">
+              <a href="#shop" class="primary-btn">Shop Now</a>
+              <a href="#support" class="secondary-btn">Customer Support</a>
+            </div>
+            <ul class="hero-points" aria-label="Store advantages">
+              <li>Free shipping over $50</li>
+              <li>Secure payment</li>
+              <li>24/7 support</li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Featured product">
+            <div class="badge">Featured</div>
+            <div class="product-visual">
+              <div class="device-screen">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div>
+                <p class="mini-label">Wireless Audio</p>
+                <h2>Nova Headphones Pro</h2>
+              </div>
+              <div class="price-row">
+                <span class="current-price">$149</span>
+                <span class="old-price">$199</span>
+              </div>
+              <button class="add-btn" data-product="Nova Headphones Pro" type="button">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="container stats-grid">
+          <div>
+            <strong>15k+</strong>
+            <span>Happy customers</span>
+          </div>
+          <div>
+            <strong>4.9/5</strong>
+            <span>Average rating</span>
+          </div>
+          <div>
+            <strong>2-day</strong>
+            <span>Fast delivery</span>
+          </div>
+          <div>
+            <strong>99%</strong>
+            <span>Support satisfaction</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop-section" id="shop">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Best sellers</p>
+            <h2>Popular products</h2>
+          </div>
+
+          <div class="shop-grid">
+            <article class="product-card">
+              <div class="product-image image-one"></div>
+              <div class="product-info">
+                <div class="product-tag">Electronics</div>
+                <h3>Smartwatch X</h3>
+                <p>Track workouts, notifications, and wellness with style.</p>
+                <div class="product-meta">
+                  <span class="price">$89</span>
+                  <button class="add-btn" data-product="Smartwatch X" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image image-two"></div>
+              <div class="product-info">
+                <div class="product-tag">Home</div>
+                <h3>Air Purifier</h3>
+                <p>Cleaner air for bedrooms, offices, and living rooms.</p>
+                <div class="product-meta">
+                  <span class="price">$120</span>
+                  <button class="add-btn" data-product="Air Purifier" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image image-three"></div>
+              <div class="product-info">
+                <div class="product-tag">Accessories</div>
+                <h3>Travel Backpack</h3>
+                <p>Adventure-ready storage with organized compartments.</p>
+                <div class="product-meta">
+                  <span class="price">$64</span>
+                  <button class="add-btn" data-product="Travel Backpack" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image image-four"></div>
+              <div class="product-info">
+                <div class="product-tag">Lifestyle</div>
+                <h3>Premium Bottle</h3>
+                <p>Stay hydrated with vacuum-insulated stainless steel design.</p>
+                <div class="product-meta">
+                  <span class="price">$32</span>
+                  <button class="add-btn" data-product="Premium Bottle" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Why choose us</p>
+            <h2>Everything you need in one place</h2>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="icon">⚡</div>
+              <h3>Fast shipping</h3>
+              <p>Quick dispatch and delivery so you get your products sooner.</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">🛡️</div>
+              <h3>Secure checkout</h3>
+              <p>Your payment details are protected with a trusted process.</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">💬</div>
+              <h3>Friendly support</h3>
+              <p>Reach our team anytime for questions, returns, or product help.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="support" id="support">
+        <div class="container support-layout">
+          <div>
+            <p class="eyebrow">Customer care</p>
+            <h2>Need help before or after your order?</h2>
+            <p>
+              Our support team can assist with order tracking, product questions,
+              shipping updates, and returns.
+            </p>
+          </div>
+
+          <div class="support-card">
+            <h3>Support center</h3>
+            <ul>
+              <li>Email: support@novacart.example</li>
+              <li>Phone: +1 (800) 555-0189</li>
+              <li>Hours: Mon–Sat, 9:00 AM to 9:00 PM</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-layout">
+        <div>
+          <div class="brand">NovaCart</div>
+          <p>Modern shopping made simple and friendly.</p>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>hello@novacart.example</li>
+            <li>123 Market Street, New York, NY</li>
+            <li>+1 (800) 555-0198</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
