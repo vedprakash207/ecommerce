@@ -3,102 +3,240 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pantaloons</title>
+    <title>All In One Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="phone-shell">
-      <header class="browser-header">
-        <div class="status-bar">
-          <div class="time">11:22</div>
-          <div class="status-icons">
-            <span class="signal-bars" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-            </span>
-            <span class="wifi" aria-hidden="true"></span>
-            <span class="battery" aria-hidden="true"><span class="battery-level"></span></span>
-            <span class="network">5G</span>
-            <span class="signal-text">66</span>
-          </div>
+    <div class="page-shell">
+      <header class="top-header">
+        <div class="top-strip">
+          <span>Sell on Store</span>
+          <span>Become a Seller</span>
+          <span>Gift Cards</span>
+          <span>Help Centre</span>
+          <span>Download App</span>
         </div>
 
-        <div class="address-row">
-          <button class="star-btn" aria-label="Favorite">✦</button>
-          <div class="site-url">pantaloons.com</div>
-          <button class="share-btn" aria-label="Share">⤴</button>
+        <div class="main-header">
+          <div class="brand-wrap">
+            <div class="brand">Shop<span>Cart</span></div>
+          </div>
+
+          <label class="search-box" aria-label="Search products">
+            <span class="search-icon">⌕</span>
+            <input type="text" value="Search for products, brands and more" aria-label="Search" />
+            <button type="button" class="search-btn">Search</button>
+          </label>
+
+          <div class="header-actions">
+            <button class="login-btn">Login</button>
+            <button class="mini-btn">Cart <span id="cartCount">0</span></button>
+          </div>
         </div>
       </header>
 
-      <main class="main-screen">
-        <div class="gemini-banner">Create an image with Gemini</div>
-
-        <div class="brand-bar">
-          <button class="menu-btn" aria-label="Menu">☰</button>
-          <div class="brand-name">pantaloons</div>
-          <button class="bag-btn" aria-label="Bag">🛍</button>
-        </div>
-
-        <div class="search-bar">
-          <span class="search-icon">⌕</span>
-          <span class="search-text">Search for brands, products and more.</span>
-          <span class="search-pipe"></span>
-          <button class="filter-btn" aria-label="Filters">▦</button>
-        </div>
-
-        <nav class="category-tabs" aria-label="Categories">
-          <span>Home</span>
-          <span>Women</span>
-          <span>Men</span>
-          <span>Kids</span>
-        </nav>
-
-        <section class="hero-banner">
-          <img
-            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
-            alt="Fashion models wearing ethnic wear"
-          />
-          <div class="hero-overlay">
-            <div class="hero-text">New In</div>
-            <div class="hero-cta">SHOP NOW</div>
+      <main class="main-content">
+        <section class="promo-band">
+          <div class="promo-item">
+            <span class="promo-icon">⚡</span>
+            <span>Top Deals</span>
+          </div>
+          <div class="promo-item">
+            <span class="promo-icon">🧥</span>
+            <span>Fashion</span>
+          </div>
+          <div class="promo-item">
+            <span class="promo-icon">📱</span>
+            <span>Electronics</span>
+          </div>
+          <div class="promo-item">
+            <span class="promo-icon">🏠</span>
+            <span>Home</span>
+          </div>
+          <div class="promo-item">
+            <span class="promo-icon">🛁</span>
+            <span>Beauty</span>
+          </div>
+          <div class="promo-item">
+            <span class="promo-icon">🚲</span>
+            <span>Mobility</span>
           </div>
         </section>
 
-        <div class="promo-strip">
-          <span>Discover what’s new! Tap to explore the latest way to shop with Pantaloons</span>
-          <button aria-label="Close">×</button>
-        </div>
+        <section class="hero-banner">
+          <button class="slider-arrow left">‹</button>
+          <div class="hero-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=80"
+              alt="Lifestyle banner"
+            />
+          </div>
+          <button class="slider-arrow right">›</button>
+        </section>
 
-        <nav class="bottom-nav" aria-label="Mobile navigation">
-          <div class="nav-item active">
-            <span class="nav-ico">⌂</span>
-            <span>Home</span>
+        <section class="section-block deal-section">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Deals of the Day</p>
+              <h2>Best offers for you</h2>
+            </div>
+            <button class="view-btn">View all</button>
           </div>
-          <div class="nav-item">
-            <span class="nav-ico">♡</span>
-            <span>Wishlist</span>
-          </div>
-          <div class="nav-item">
-            <span class="nav-ico">◫</span>
-            <span>Instore</span>
-          </div>
-          <div class="nav-item">
-            <span class="nav-ico">⌕</span>
-            <span>Search</span>
-          </div>
-          <div class="nav-item">
-            <span class="nav-ico">◔</span>
-            <span>Profile</span>
-          </div>
-        </nav>
 
-        <div class="toolbar-footer">
-          <button class="nav-arrow" aria-label="Previous">←</button>
-          <button class="nav-arrow" aria-label="Next">→</button>
-          <button class="plus-btn" aria-label="More">＋</button>
-          <button class="badge-pill" aria-label="Notifications">5</button>
-          <button class="more-btn" aria-label="Options">•••</button>
-        </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-image image-one"></div>
+              <div class="product-info">
+                <h3>Noise Buds Pro</h3>
+                <p class="price-row"><span class="price">₹1,999</span><span class="old">₹3,499</span></p>
+                <button class="add-btn" data-product="Noise Buds Pro" type="button">Add to cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image image-two"></div>
+              <div class="product-info">
+                <h3>Smart Watch</h3>
+                <p class="price-row"><span class="price">₹2,499</span><span class="old">₹4,299</span></p>
+                <button class="add-btn" data-product="Smart Watch" type="button">Add to cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image image-three"></div>
+              <div class="product-info">
+                <h3>Bluetooth Speaker</h3>
+                <p class="price-row"><span class="price">₹1,299</span><span class="old">₹2,199</span></p>
+                <button class="add-btn" data-product="Bluetooth Speaker" type="button">Add to cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image image-four"></div>
+              <div class="product-info">
+                <h3>Air Fryer</h3>
+                <p class="price-row"><span class="price">₹3,199</span><span class="old">₹5,499</span></p>
+                <button class="add-btn" data-product="Air Fryer" type="button">Add to cart</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="feature-banner">
+          <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=80"
+            alt="Fashion sale banner"
+          />
+        </section>
+
+        <section class="section-block categories-section">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Trending Categories</p>
+              <h2>Shop by category</h2>
+            </div>
+          </div>
+
+          <div class="category-grid">
+            <div class="category-item">
+              <div class="circle-icon">👕</div>
+              <span>Fashion</span>
+            </div>
+            <div class="category-item">
+              <div class="circle-icon">🧴</div>
+              <span>Beauty</span>
+            </div>
+            <div class="category-item">
+              <div class="circle-icon">💻</div>
+              <span>Electronics</span>
+            </div>
+            <div class="category-item">
+              <div class="circle-icon">🛋️</div>
+              <span>Home</span>
+            </div>
+            <div class="category-item">
+              <div class="circle-icon">🧳</div>
+              <span>Travel</span>
+            </div>
+            <div class="category-item">
+              <div class="circle-icon">👟</div>
+              <span>Shoes</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block spotlight-section">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Top picks</p>
+              <h2>New arrivals</h2>
+            </div>
+            <button class="view-btn">Explore</button>
+          </div>
+
+          <div class="spotlight-grid">
+            <article class="spotlight-card large">
+              <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Men fashion" />
+              <div class="spotlight-text">
+                <span>Menswear</span>
+                <strong>Fresh looks</strong>
+              </div>
+            </article>
+
+            <article class="spotlight-card">
+              <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Women fashion" />
+              <div class="spotlight-text">
+                <span>Women</span>
+                <strong>Season picks</strong>
+              </div>
+            </article>
+
+            <article class="spotlight-card">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988c2477d?auto=format&fit=crop&w=900&q=80" alt="Accessories" />
+              <div class="spotlight-text">
+                <span>Accessories</span>
+                <strong>Trending</strong>
+              </div>
+            </article>
+          </div>
+        </section>
       </main>
+
+      <footer class="site-footer">
+        <div class="footer-top">
+          <div>
+            <h4>About</h4>
+            <ul>
+              <li>Contact Us</li>
+              <li>About Us</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Help</h4>
+            <ul>
+              <li>Payments</li>
+              <li>Shipping</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Policy</h4>
+            <ul>
+              <li>Return Policy</li>
+              <li>Terms of Use</li>
+              <li>Privacy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2026 ShopCart. All rights reserved.</div>
+      </footer>
     </div>
 
     <script src="script.js"></script>
